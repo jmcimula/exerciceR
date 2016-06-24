@@ -1,0 +1,81 @@
+#' ## 3 Data Exploration
+
+#' This chapter show examples on data exploraton with R.
+#' * inspecting w.r.t. an R object
+#'     - the dimensionality
+#'     - structure
+#'     - data
+#' * basic satistics
+#' * various charts
+#'     - pie charets
+#'     - histograms
+#' * Exploration of multiple variables
+#'     - grouped distribution
+#'     - grouped boxplots
+#'     - scattered plot
+#'     - pairs plot
+#'     - level plot
+#'     - controur plot
+#'     - 3D plot
+#'     - how to save charts into files of various formats
+
+#' ### 3.1 Have a Look at Data
+
+#' dimension, names, structure, and attributes
+
+#+
+dim(iris)
+names(iris)
+str(iris)
+attributes(iris)
+
+#' the first or last rows
+
+#+
+iris[1:5,]
+head(iris)
+tail(iris)
+
+#' retrieval of the values of a single column
+
+#+
+iris[1:10, "Sepal.Length"]
+iris$Sepal.Length[1:10]
+
+#' ### 3.2 Explore Individual Variables
+
+#' #### basic statistics
+
+#' distribution of every numeric variable
+#' it shows the frequency of every level for factors
+
+#+
+summary(iris)
+
+#+
+quantile(iris$Sepal.Length)
+quantile(iris$Sepal.Length, c(.1, .3, .65))
+
+#+
+var(iris$Sepal.Length)
+hist(iris$Sepal.Length)
+
+#+
+plot(density(iris$Sepal.Length))
+
+#+
+table(iris$Species)
+
+#+
+pie(table(iris$Species))
+
+#+
+barplot(table(iris$Species))
+
+
+
+
+
+
+
+
