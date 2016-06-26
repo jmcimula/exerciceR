@@ -1,4 +1,4 @@
-#R Community & Forum
+#R Community & Forum & Consortium
 
 [Revolution Analytics ] (http://www.revolutionanalytics.com/r-community)
 
@@ -13,3 +13,5 @@
 [Stackoverflow] (http://stackoverflow.com/questions/tagged/r)
 
 [R Studio] (https://www.rstudio.com)
+
+[R Consortium] (https://www.r-consortium.org/)
